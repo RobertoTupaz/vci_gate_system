@@ -1,0 +1,10 @@
+@font-face {
+    font-family: 'BbtFont';
+    src: url('./fonts/Regular.otf') format('opentype');
+    font-style: normal;
+    font-weight: normal;
+}
+
+.bbtmarites-font {
+    font-family: 'BbtFont', sans-serif !important;
+}

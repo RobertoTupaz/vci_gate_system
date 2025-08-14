@@ -49,7 +49,8 @@ class AttendanceResource extends Resource
     {
         return $table
             ->columns([
-                Tables\Columns\TextColumn::make('id')->sortable(),
+                // Tables\Columns\TextColumn::make('id')->sortable(),
+                Tables\Columns\TextColumn::make('user.StudentNumber')->sortable(),
                 Tables\Columns\TextColumn::make('user.name')->label('Student')->sortable()->searchable(),
                 Tables\Columns\TextColumn::make('date')->date()->sortable(),
                 Tables\Columns\TextColumn::make('time_in')->dateTime()->sortable(),

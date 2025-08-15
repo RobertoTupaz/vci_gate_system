@@ -9,7 +9,7 @@
 
     <div class="grid grid-cols-12 flex-1 gap-6 px-8 py-6">
         <!-- Left: Main Image & QR -->
-        <div class="col-span-3 flex flex-col items-center justify-center h-full">
+        <div class="col-span-4 flex flex-col items-center justify-center h-full">
             <div class="bg-white rounded-2xl shadow-lg p-6 flex flex-col items-center w-full">
                 @php
                 $photoUrl = null;
@@ -21,7 +21,7 @@
                 @endphp
 
                 <img src="{{ $photoUrl }}" alt="{{ $student->name ?? " student photo" }}"
-                    class="w-[320px] h-[320px] object-cover rounded-xl border-4 border-[#2f9e89] mb-4">
+                    class="w-[420px] h-[420px] object-cover rounded-xl border-4 border-[#2f9e89] mb-4">
                 <div class="w-full">
                     <label for="qr-input" class="block text-[18px] font-semibold text-[#2f9e89] mb-2">Scan QR
                         Code</label>
@@ -92,7 +92,7 @@
         </div>
 
         <!-- Right: Side People -->
-        <div class="col-span-3 flex flex-col items-center justify-center h-full">
+        <div class="col-span-2 flex flex-col items-center justify-center h-full">
             <div class="bg-white rounded-2xl shadow-lg p-6 w-full flex flex-col items-center space-y-8">
                 @foreach($recent as $record)
                 <div class="flex flex-col items-center">
